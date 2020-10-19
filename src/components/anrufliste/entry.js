@@ -8,10 +8,13 @@ export function createHeader() {
   const headerElement = createElement("header", {
     className: "header",
     children: [
-      createElement("img", {
-        src: avatar,
+      createElement("div", {
         className: "header__avatar",
-        alt: "Avatar",
+        children: [
+          createElement("div", {
+            className: "header__avatar__dot",
+          }),
+        ],
       }),
 
       createElement("div", {
@@ -20,7 +23,7 @@ export function createHeader() {
           createElement("input", {
             type: "textfield",
             className: "header__searchbar__input",
-            innerText: "Search",
+            placeholder: "Search",
           }),
           createElement("img", {
             src: menu,

@@ -6,7 +6,9 @@ import { createContact } from "./list";
 
 import avatar from "../../assets/avatar/avatar.png";
 import incoming from "../../assets/icon/icon-phone-incoming.svg";
+import outgoing from "../../assets/icon/icon-phone-outgoing.svg";
 import phone from "../../assets/icon/icon-phone.svg";
+import video from "../../assets/icon/icon-video.svg";
 
 export default {
   title: "components/entry",
@@ -36,6 +38,15 @@ const callerList = [
     times: "Yesterday, 07:00 pm",
     typeOfCall: phone,
     type: "Phone",
+  },
+  {
+    name: "Don Müller",
+    src: avatar,
+    directionOfCall: outgoing,
+    direction: "Outgoing",
+    times: "Yesterday, 06:15 pm",
+    typeOfCall: video,
+    type: "Video",
   },
   {
     name: "Dan Wells",
